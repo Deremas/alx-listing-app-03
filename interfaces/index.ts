@@ -38,7 +38,11 @@ export interface PropertyProps {
 
 export interface Accommodation {
   label: string;
-  Icon: IconType; 
+  Icon: IconType;
 }
 
 export type Accommodations = Accommodation[];
+
+export interface LayoutProps {
+  children: React.ReactNode;
+}
