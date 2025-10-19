@@ -1,48 +1,46 @@
-# 🏡 Milestone 2: Responsive Listing Page
+# 🏡 Milestone 4: Booking Detail Page
 
 ![React](https://img.shields.io/badge/React-18-61dafb?style=for-the-badge&logo=react)
 ![Next.js](https://img.shields.io/badge/Next.js-13+-000000?style=for-the-badge&logo=nextdotjs)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4+-3178C6?style=for-the-badge&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3+-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-A **responsive property listing page** built with **Next.js, React, TypeScript, and Tailwind CSS**, featuring luxury properties, interactive filters, a hero section, and a clean layout that adapts across screen sizes.
+A **fully functional Booking Detail Page** built with **Next.js, React, TypeScript, and Tailwind CSS**, allowing users to enter contact and payment details, review booking information, and confirm their booking. The page is fully responsive and mirrors real-world platforms like Airbnb and Booking.com.
 
 ---
 
 ## 📌 Overview
 
-This project helps you master:
+This milestone helps learners practice:
 
-- Responsive web design using **Tailwind CSS**
-- Reusable **React components** for layout (Header, Footer, Layout)
-- **TypeScript interfaces** for type safety
-- Proper **Next.js project structure**
-- Dynamic rendering of **property listings** from sample data
-- Interactive **filter functionality**
-- Component composition and UI breakdown from mockups
+- Component-based architecture in a **Next.js project**
+- Building responsive **forms** with Tailwind CSS
+- Dynamic **Order Summary** components
+- Presenting booking and pricing information clearly
+- Organizing project files for scalability and maintainability
+- Implementing UX elements like **cancellation policy** and **ground rules**
 
 ---
 
 ## 🎯 Features
 
-✅ **Header & Footer** – Navigation, logo, and relevant links  
-✅ **Hero Section** – Background image with call-to-action text  
-✅ **Filter Section** – Clickable filter pills for property types  
-✅ **Property Listing Grid** – Responsive cards displaying properties  
-✅ **Reusable Components** – Pill, Card, Header, Footer, Layout  
-✅ **Responsive Design** – Mobile-first, tablet, and desktop layouts  
-✅ **TypeScript Typing** – Interfaces for property data  
-✅ **Optimized Performance** – Lazy loading and optimized images  
-✅ **Accessibility** – Semantic HTML, alt text, keyboard navigable elements  
+- ✅ **Booking Form** – Collects contact, payment, and billing details  
+- ✅ **Order Summary** – Displays booking fees, subtotal, and total  
+- ✅ **Cancellation Policy** – Clear information on refund rules  
+- ✅ **Ground Rules** – House rules for guests  
+- ✅ **Responsive Design** – Mobile, tablet, and desktop layouts using Tailwind CSS  
+- ✅ **Reusable Components** – `BookingForm`, `OrderSummary`, `CancellationPolicy`  
+- ✅ **TypeScript Typing** – Interfaces for booking data  
+- ✅ **Clean UI/UX** – Structured layouts with Tailwind utility classes  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Next.js 13+** – React framework with SSG/SSR  
+- **Next.js 13+** – Framework for SSR/SSG and routing  
 - **React 18** – Component-based UI  
-- **TypeScript** – Static typing for safer code  
-- **Tailwind CSS 3+** – Utility-first styling  
+- **TypeScript** – Type safety and improved development experience  
+- **Tailwind CSS 3+** – Utility-first styling for responsive design  
 - **ESLint + Prettier** – Code quality and formatting  
 
 ---
@@ -50,28 +48,33 @@ This project helps you master:
 ## 📂 Project Structure
 
 ```bash
-alx-listing-app-00/
+alx-listing-app-03/
 ├── components/
-│   ├── layout/        # Header, Footer, Layout components
-│   └── common/        # Reusable UI components (Pill, Card)
-├── constants/         # Property listing sample data
-├── interfaces/        # TypeScript interfaces
+│   ├── booking/
+│   │   ├── BookingForm.tsx         # Contact, payment, and billing form
+│   │   ├── OrderSummary.tsx        # Booking fee and total summary
+│   │   └── CancellationPolicy.tsx  # Cancellation rules and ground rules
+│   ├── layout/                     # Header, Footer, Layout components
+│   └── common/                     # Reusable UI components (Card, Button)
+├── constants/                       # Sample booking and property data
+├── interfaces/                      # TypeScript interfaces
 ├── pages/
-│   ├── index.tsx      # Home page with hero, filters, listing
-│   └── _app.tsx       # Application root with Layout wrapper
-├── public/            # Images and static assets
-├── styles/            # Tailwind CSS global styles
-└── next.config.js     # Next.js configuration
+│   ├── booking/
+│   │   └── index.tsx                # Booking detail page
+│   └── _app.tsx                     # Application root with Layout wrapper
+├── public/                           # Images and static assets
+├── styles/                           # Tailwind CSS global styles
+└── next.config.js                    # Next.js configuration
 ```
 
 ## 🧑‍💻 Installation & Setup
 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/Deremas/alx-listing-app-00.git
+git clone https://github.com/Deremas/alx-listing-app-03.git
 ```
 2️⃣ Navigate to the project folder
 ```bash
-cd alx-listing-app-00
+cd alx-listing-app-03
 ```
 3️⃣ Install dependencies:
 ```bash
@@ -82,6 +85,5 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 to view the app.
-
+Open `http://localhost:3000/booking` to view the Booking Detail Page.
 ---
